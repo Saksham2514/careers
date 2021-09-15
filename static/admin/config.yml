@@ -1,0 +1,16 @@
+backend:
+  name: git-gateway
+  branch: main
+  media_folder: "../../src/images"
+  collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "../../src/careers"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - { label: "Featured Image" ,  name: "featured",   widget: "image", choose_url: true}    
