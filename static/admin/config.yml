@@ -1,11 +1,11 @@
 backend:
   name: git-gateway
   branch: main
-media_folder: "images"
+media_folder: "src/images"
 collections:
   - name: "Career Posts "
     label: "Posts"
-    folder: "careers"
+    folder: "src/careers"
     create: true
     slug: "{{slug}}"
     fields:
