@@ -11,6 +11,8 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Status", name: "status", widget: "string"}
+      - {label: "Publish Date", name: "postedDate", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - { label: "Featured Image" ,  name: "featured",   widget: "image", choose_url: true}    
+      - { label: "Featured Image" ,  name: "featuredImage",   widget: "image", choose_url: true}    
