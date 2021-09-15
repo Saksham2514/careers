@@ -17,16 +17,18 @@ export default function careerDetails({data}) {
     )
 }
 export const query = graphql `
-query DetailsQuery($eq: String) {
-  imageSharp {
+query Details($slug: String, $id: String) {
+  markdownRemark(frontmatter: {slug: {eq: $slug}}) {
+    frontmatter {
+      slug
+      title
+      featuredImage
+    }
+    html
+  }
+  imageSharp(id: {eq: $id}) {
     gatsbyImageData
   }
-  markdownRemark(frontmatter: {slug: {eq: $eq}}) {
-    html
-    frontmatter {
-      title
-      slug
-    }
-  }
 }
+
 `

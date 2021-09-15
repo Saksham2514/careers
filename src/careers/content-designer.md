@@ -2,7 +2,7 @@
 title: "Creative Graphic Designer Intern"
 description: "We are looking for a star player who can help blur the line between art and technology for our customers."
 postedDate: 12/14/21
-featuredImage: ./images/Creative-Graphics-Designer.jpg
+featuredImage: ../../images/Creative-Graphics-Designer.jpg
 status: "open"
 slug: "content-design"
 ---
