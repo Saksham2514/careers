@@ -15,4 +15,4 @@ collections:
       - {label: "Status", name: "status", widget: "string"}
       - {label: "Publish Date", name: "postedDate", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - { label: "Featured Image" ,  name: "featuredImage",   widget: "image", choose_url: true}    
+      - { label: "Featured Image" ,  name: "featuredImage",   widget: "image"}    
