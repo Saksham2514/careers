@@ -1,5 +1,5 @@
 import React from "react"
-import {graphql,useStaticQuery } from "gatsby"
+import {graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 
@@ -11,24 +11,26 @@ export default function careerDetails({data}) {
     // console.log(posts)
     return (
         <div>
-            <GatsbyImage image={data.imageSharp.gatsbyImageData} alt={posts.frontmatter.slug}/>
+            <GatsbyImage image={posts.frontmatter.childImageSharp.gatsbyImageData} alt={posts.frontmatter.slug}/>
             <div dangerouslySetInnerHTML={{__html : posts.html}}></div>
         </div>
     )
 }
 export const query = graphql `
-query Details($slug: String, $id: String) {
-  markdownRemark(frontmatter: {slug: {eq: $slug}}) {
+query Details($slug: String) {
+    markdownRemark(frontmatter: {slug: {eq: $slug}}) {
     frontmatter {
       slug
       title
-      featuredImage
+      featuredImage {
+        childImageSharp {
+          gatsbyImageData
+        }
+      }
     }
     html
   }
-  imageSharp(id: {eq: $id}) {
-    gatsbyImageData
-  }
+  
 }
 
 `

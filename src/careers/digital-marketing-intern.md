@@ -5,7 +5,7 @@ description: We are looking for a star player who can help us build digital
   relationships with our customers.
 status: open
 postedDate: 2021-09-16T07:15:23.507Z
-featuredImage: /src/images/digital-marketing.jpg
+featuredImage: ../images/digital-marketing.jpg
 ---
 # Digital Marketing Intern
 
