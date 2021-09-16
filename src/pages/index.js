@@ -52,8 +52,4 @@ console.log(posts)
         )}
   
     </div>
-  )
-  
- 
-
-}
+  )}
