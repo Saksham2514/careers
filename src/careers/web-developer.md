@@ -1,10 +1,11 @@
 ---
-title: "Web Developer Intern"
-description: "We are looking for a star player who can help us deliver the most amazing CSS customizations."
-postedDate: 01/14/21
+title: Web Developer Intern
+description: We are looking for a star player who can help us deliver the most
+  amazing CSS customizations.
+status: open
+postedDate: 2021-02-16T18:30:00.000Z
 featuredImage: ../images/Web-Developer.png
-status: "open"
-slug: "web-development"
+slug: web-development
 ---
 
 # Web Developer Intern
