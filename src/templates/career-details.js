@@ -11,7 +11,7 @@ export default function careerDetails({data}) {
     // console.log(posts)
     return (
         <div>
-            <GatsbyImage image={posts.frontmatter.childImageSharp.gatsbyImageData} alt={posts.frontmatter.slug}/>
+            <GatsbyImage image={posts.frontmatter.featuredImage.childImageSharp.gatsbyImageData} alt={posts.frontmatter.slug}/>
             <div dangerouslySetInnerHTML={{__html : posts.html}}></div>
         </div>
     )
