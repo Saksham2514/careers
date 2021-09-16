@@ -4,7 +4,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 export default function Home({data}) {
 const dat1 = useStaticQuery(graphql `
 query MyQuery {
-  allMarkdownRemark {
+  allMarkdownRemark (  sort: {fields: frontmatter___postedDate, order: ASC}){
     nodes {
       frontmatter {
         title
