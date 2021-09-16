@@ -1,10 +1,11 @@
 ---
-title: "Creative Graphic Designer Intern"
-description: "We are looking for a star player who can help blur the line between art and technology for our customers."
-postedDate: 12/14/21
+title: Creative Graphic Designer Intern
+description: We are looking for a star player who can help blur the line between
+  art and technology for our customers.
+status: open
+postedDate: 2021-12-07T18:30:00.000Z
 featuredImage: ../images/Creative-Graphics-Designer.jpg
-status: "open"
-slug: "content-design"
+slug: content-design
 ---
 # Creative Graphic Designer Intern
 We are looking for a star player who can help blur the line between art and technology for our customers.
